@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Ferro & Navalha Barbearia — Corte. Estilo. Respeito. Uma experiência de barbearia premium em São Paulo." />
+  <meta name="theme-color" content="#0a0a0a" />
+  <title>Ferro & Navalha — Barbearia Premium</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Barlow:wght@300;400;500;600&family=Barlow+Condensed:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ══════════════════ CANVAS BG ══════════════════ -->
+  <canvas id="bg-canvas" aria-hidden="true"></canvas>
+
+  <!-- ══════════════════ HEADER ══════════════════ -->
+  <header class="site-header" id="site-header">
+    <div class="header-inner">
+      <a href="#inicio" class="logo" aria-label="Ferro e Navalha — Página Inicial">
+        <span class="logo-icon" aria-hidden="true">✕</span>
+        <span class="logo-text">
+          <strong>Ferro &amp; Navalha</strong>
+          <small>EST. 2011</small>
+        </span>
+      </a>
+
+      <nav class="main-nav" id="main-nav" aria-label="Navegação principal">
+        <ul>
+          <li><a href="#inicio" class="nav-link active">Início</a></li>
+          <li><a href="#sobre" class="nav-link">Sobre</a></li>
+          <li><a href="#barbeiros" class="nav-link">Barbeiros</a></li>
+          <li><a href="#servicos" class="nav-link">Serviços</a></li>
+          <li><a href="#galeria" class="nav-link">Galeria</a></li>
+          <li><a href="#contato" class="nav-link">Contato</a></li>
+        </ul>
+      </nav>
+
+      <a href="#agendar" class="btn btn-outline header-cta">
+        Agendar Horário
+        <span class="btn-icon" aria-hidden="true">↗</span>
+      </a>
+
+      <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="main-nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ══════════════════ HERO ══════════════════ -->
+    <section class="hero" id="inicio" aria-label="Seção principal">
+      <div class="hero-bg" aria-hidden="true">
+        <div class="hero-overlay"></div>
+        <div class="hero-vignette"></div>
+      </div>
+
+      <div class="hero-content">
+        <p class="hero-eyebrow">
+          <span class="eyebrow-line" aria-hidden="true"></span>
+          Barber Shop · Est. 2015
+        </p>
+        <h1 class="hero-headline">
+          <span class="line line-1" data-reveal>Corte.</span>
+          <span class="line line-2 gold" data-reveal>Estilo.</span>
+          <span class="line line-3" data-reveal>Respeito.</span>
+        </h1>
+        <p class="hero-sub" data-reveal>
+          Mais que um corte. Uma experiência de respeito,<br>confiança e autenticidade.
+        </p>
+        <div class="hero-ctas" data-reveal>
+          <a href="#agendar" class="btn btn-gold">Agendar Agora <span aria-hidden="true">→</span></a>
+          <a href="#sobre" class="btn btn-ghost">Conheça a Barbearia</a>
+        </div>
+      </div>
+
+      <div class="hero-stats" aria-label="Indicadores de confiança">
+        <div class="stat">
+          <strong>10<sup>+</sup></strong>
+          <span>Anos de história</span>
+        </div>
+        <div class="stat-divider" aria-hidden="true"></div>
+        <div class="stat">
+          <strong>1.2K<sup>+</sup></strong>
+          <span>Clientes fiéis</span>
+        </div>
+        <div class="stat-divider" aria-hidden="true"></div>
+        <div class="stat">
+          <strong>5.0</strong>
+          <span class="stars" aria-label="5 estrelas">★★★★★</span>
+          <span>Avaliações</span>
+        </div>
+      </div>
+
+      <div class="hero-scroll" aria-hidden="true">
+        <span class="scroll-line"></span>
+      </div>
+
+      <nav class="hero-dots" aria-hidden="true">
+        <span class="dot active"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </nav>
+    </section>
+
+    <!-- ══════════════════ SOBRE ══════════════════ -->
+    <section class="sobre" id="sobre" aria-labelledby="sobre-titulo">
+      <div class="container">
+        <div class="sobre-grid">
+          <div class="sobre-image-wrap" data-reveal>
+            <div class="sobre-img-frame">
+              <div class="sobre-img-placeholder" aria-label="Interior da barbearia Ferro e Navalha"></div>
+              <div class="sobre-stamp" aria-hidden="true">
+                <span>Ferro</span>
+                <span class="stamp-symbol">✕</span>
+                <span>Navalha</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="sobre-content">
+            <p class="section-label" data-reveal>Sobre nós</p>
+            <h2 class="section-headline" data-reveal>
+              Tradição que<br><em>se renova.</em>
+            </h2>
+            <p class="sobre-text" data-reveal>
+              Unimos técnicas clássicas com tendências modernas para entregar cortes que combinam com você. Ambiente feito para quem valoriza estilo, conversa boa e um serviço de qualidade.
+            </p>
+            <div class="sobre-assinatura" data-reveal aria-label="Assinatura do fundador">
+              <svg viewBox="0 0 180 50" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M10 35 Q30 10 50 30 Q70 50 90 25 Q110 5 130 28 Q150 45 170 20" stroke="#c9a84c" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+              </svg>
+            </div>
+
+            <div class="sobre-features" data-reveal>
+              <div class="feature">
+                <span class="feature-icon" aria-hidden="true">◎</span>
+                <span>Atendimento Personalizado</span>
+              </div>
+              <div class="feature">
+                <span class="feature-icon" aria-hidden="true">◈</span>
+                <span>Produtos Premium</span>
+              </div>
+              <div class="feature">
+                <span class="feature-icon" aria-hidden="true">✦</span>
+                <span>Ambiente Masculino</span>
+              </div>
+              <div class="feature">
+                <span class="feature-icon" aria-hidden="true">◇</span>
+                <span>Higiene &amp; Qualidade</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════ SERVIÇOS ══════════════════ -->
+    <section class="servicos" id="servicos" aria-labelledby="servicos-titulo">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-label" data-reveal>Nossos Serviços</p>
+          <h2 class="section-headline centered" id="servicos-titulo" data-reveal>
+            Feito para realçar<br>sua melhor versão.
+          </h2>
+        </div>
+
+        <div class="servicos-grid">
+          <article class="servico-card" data-reveal>
+            <div class="servico-icon" aria-hidden="true">✂</div>
+            <h3>Corte Masculino</h3>
+            <p>Técnica, estilo e acabamento perfeito.</p>
+            <div class="servico-price">R$ 60</div>
+          </article>
+          <article class="servico-card" data-reveal>
+            <div class="servico-icon" aria-hidden="true">✦</div>
+            <h3>Degradê</h3>
+            <p>Degradês clássicos e modernos.</p>
+            <div class="servico-price">R$ 70</div>
+          </article>
+          <article class="servico-card featured" data-reveal>
+            <div class="servico-icon" aria-hidden="true">◈</div>
+            <h3>Barba</h3>
+            <p>Aparar, modelar e finalização com navalha.</p>
+            <div class="servico-price">R$ 50</div>
+          </article>
+          <article class="servico-card" data-reveal>
+            <div class="servico-icon" aria-hidden="true">◉</div>
+            <h3>Barba Premium</h3>
+            <p>Toalha quente, hidratação e finalização premium.</p>
+            <div class="servico-price">R$ 80</div>
+          </article>
+          <article class="servico-card" data-reveal>
+            <div class="servico-icon" aria-hidden="true">❖</div>
+            <h3>Pacote Completo</h3>
+            <p>Corte + barba + finalização premium.</p>
+            <div class="servico-price">R$ 110</div>
+          </article>
+          <article class="servico-card" data-reveal>
+            <div class="servico-icon" aria-hidden="true">◇</div>
+            <h3>Sobrancelha</h3>
+            <p>Alinhamento e design personalizado.</p>
+            <div class="servico-price">R$ 30</div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════ BARBEIROS ══════════════════ -->
+    <section class="barbeiros" id="barbeiros" aria-labelledby="barbeiros-titulo">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-label" data-reveal>Nossos Barbeiros</p>
+          <h2 class="section-headline centered" id="barbeiros-titulo" data-reveal>
+            Profissionais que<br>entendem de estilo.
+          </h2>
+        </div>
+
+        <div class="barbeiros-grid">
+          <article class="barbeiro-card" data-reveal>
+            <div class="barbeiro-photo" aria-label="Foto de Rafael"></div>
+            <div class="barbeiro-info">
+              <h3>Rafael</h3>
+              <p>Especialista em degradê e cortes modernos.</p>
+              <div class="barbeiro-social">
+                <a href="#" aria-label="Instagram de Rafael" class="social-link">IG</a>
+                <a href="#" aria-label="WhatsApp de Rafael" class="social-link">WA</a>
+              </div>
+            </div>
+          </article>
+          <article class="barbeiro-card" data-reveal>
+            <div class="barbeiro-photo" aria-label="Foto de Gustavo"></div>
+            <div class="barbeiro-info">
+              <h3>Gustavo</h3>
+              <p>Barba, navalha e acabamentos premium.</p>
+              <div class="barbeiro-social">
+                <a href="#" aria-label="Instagram de Gustavo" class="social-link">IG</a>
+                <a href="#" aria-label="WhatsApp de Gustavo" class="social-link">WA</a>
+              </div>
+            </div>
+          </article>
+          <article class="barbeiro-card featured" data-reveal>
+            <div class="barbeiro-photo" aria-label="Foto de Diego"></div>
+            <div class="barbeiro-info">
+              <h3>Diego</h3>
+              <p>Cortes clássicos e estilo vintage.</p>
+              <div class="barbeiro-social">
+                <a href="#" aria-label="Instagram de Diego" class="social-link">IG</a>
+                <a href="#" aria-label="WhatsApp de Diego" class="social-link">WA</a>
+              </div>
+            </div>
+          </article>
+          <article class="barbeiro-card" data-reveal>
+            <div class="barbeiro-photo" aria-label="Foto de Leandro"></div>
+            <div class="barbeiro-info">
+              <h3>Leandro</h3>
+              <p>Especialista em barba e design.</p>
+              <div class="barbeiro-social">
+                <a href="#" aria-label="Instagram de Leandro" class="social-link">IG</a>
+                <a href="#" aria-label="WhatsApp de Leandro" class="social-link">WA</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════ GALERIA ══════════════════ -->
+    <section class="galeria" id="galeria" aria-labelledby="galeria-titulo">
+      <div class="container">
+        <div class="galeria-header">
+          <div>
+            <p class="section-label" data-reveal>Galeria</p>
+            <h2 class="section-headline" id="galeria-titulo" data-reveal>Alguns trabalhos.</h2>
+          </div>
+          <a href="#" class="btn btn-outline" data-reveal aria-label="Ver toda a galeria de trabalhos">Ver Toda Galeria</a>
+        </div>
+
+        <div class="galeria-grid" data-reveal>
+          <div class="galeria-item tall" aria-label="Trabalho de barbearia 1"></div>
+          <div class="galeria-item" aria-label="Trabalho de barbearia 2"></div>
+          <div class="galeria-item" aria-label="Trabalho de barbearia 3"></div>
+          <div class="galeria-item wide" aria-label="Trabalho de barbearia 4"></div>
+          <div class="galeria-item" aria-label="Trabalho de barbearia 5"></div>
+          <div class="galeria-item" aria-label="Trabalho de barbearia 6"></div>
+          <div class="galeria-item tall" aria-label="Trabalho de barbearia 7"></div>
+          <div class="galeria-item" aria-label="Trabalho de barbearia 8"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════ DEPOIMENTOS ══════════════════ -->
+    <section class="depoimentos" id="depoimentos" aria-labelledby="depoimentos-titulo">
+      <div class="container">
+        <p class="section-label centered" data-reveal>O que dizem nossos clientes</p>
+
+        <div class="depoimentos-grid">
+          <blockquote class="depoimento-card" data-reveal>
+            <div class="depo-quote" aria-hidden="true">"</div>
+            <div class="stars" aria-label="5 estrelas">★★★★★</div>
+            <p>Atendimento top, corte impecável e ambiente sensacional!</p>
+            <footer><cite>— Lucas Almeida</cite></footer>
+          </blockquote>
+          <blockquote class="depoimento-card" data-reveal>
+            <div class="depo-quote" aria-hidden="true">"</div>
+            <div class="stars" aria-label="5 estrelas">★★★★★</div>
+            <p>Melhor experiência de barbearia que tive na minha vida.</p>
+            <footer><cite>— Mateus Silva</cite></footer>
+          </blockquote>
+          <blockquote class="depoimento-card" data-reveal>
+            <div class="depo-quote" aria-hidden="true">"</div>
+            <div class="stars" aria-label="5 estrelas">★★★★★</div>
+            <p>Profissionais de verdade, ambiente diferenciado.</p>
+            <footer><cite>— Carlos Henrique</cite></footer>
+          </blockquote>
+          <blockquote class="depoimento-card" data-reveal>
+            <div class="depo-quote" aria-hidden="true">"</div>
+            <div class="stars" aria-label="4 estrelas">★★★★☆</div>
+            <p>Corte, barba e resenha. Não troco por nada!</p>
+            <footer><cite>— Thiago Souza</cite></footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════ CTA FINAL ══════════════════ -->
+    <section class="cta-final" id="agendar" aria-labelledby="cta-titulo">
+      <div class="container">
+        <div class="cta-inner" data-reveal>
+          <p class="section-label centered">Reserve seu horário</p>
+          <h2 class="cta-headline" id="cta-titulo">
+            Seu próximo corte<br><em>começa aqui.</em>
+          </h2>
+          <p class="cta-sub">Agende agora e garanta seu horário com o melhor barbeiro para você.</p>
+          <div class="cta-actions">
+            <a href="https://wa.me/5511987654321" class="btn btn-gold btn-lg" rel="noopener" target="_blank">
+              Agendar pelo WhatsApp
+              <span aria-hidden="true">→</span>
+            </a>
+            <a href="tel:+5511987654321" class="btn btn-ghost">
+              (11) 98765-4321
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════ LOCALIZAÇÃO ══════════════════ -->
+    <section class="localizacao" id="contato" aria-labelledby="localizacao-titulo">
+      <div class="container">
+        <div class="localizacao-grid">
+          <div class="localizacao-info">
+            <p class="section-label" data-reveal>Onde estamos</p>
+            <h2 class="section-headline" id="localizacao-titulo" data-reveal>
+              Venha tomar<br>um café.
+            </h2>
+            <div class="contato-items" data-reveal>
+              <div class="contato-item">
+                <span class="contato-icon" aria-hidden="true">◎</span>
+                <div>
+                  <strong>Endereço</strong>
+                  <span>Rua dos Barbearias, 123<br>Centro · São Paulo/SP</span>
+                </div>
+              </div>
+              <div class="contato-item">
+                <span class="contato-icon" aria-hidden="true">☎</span>
+                <div>
+                  <strong>Telefone</strong>
+                  <a href="tel:+5511987654321">(11) 98765-4321</a>
+                  <a href="https://wa.me/5511987654321" rel="noopener" target="_blank">WhatsApp</a>
+                </div>
+              </div>
+              <div class="contato-item">
+                <span class="contato-icon" aria-hidden="true">◷</span>
+                <div>
+                  <strong>Horários</strong>
+                  <span>Segunda a Sábado<br>09h às 20h</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="localizacao-mapa" data-reveal aria-label="Mapa da localização">
+            <div class="mapa-placeholder">
+              <div class="mapa-pin" aria-hidden="true">◎</div>
+              <span>Ferro &amp; Navalha</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ══════════════════ FOOTER ══════════════════ -->
+  <footer class="site-footer" aria-label="Rodapé">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#inicio" class="logo" aria-label="Ferro e Navalha — Topo da página">
+            <span class="logo-icon" aria-hidden="true">✕</span>
+            <span class="logo-text">
+              <strong>Ferro &amp; Navalha</strong>
+              <small>EST. 2011</small>
+            </span>
+          </a>
+          <p>Corte. Estilo. Respeito.</p>
+        </div>
+
+        <nav class="footer-nav" aria-label="Navegação do rodapé">
+          <h3>Navegação</h3>
+          <ul>
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#barbeiros">Barbeiros</a></li>
+            <li><a href="#servicos">Serviços</a></li>
+            <li><a href="#galeria">Galeria</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+        </nav>
+
+        <nav class="footer-nav" aria-label="Serviços">
+          <h3>Serviços</h3>
+          <ul>
+            <li><a href="#servicos">Corte Masculino</a></li>
+            <li><a href="#servicos">Degradê</a></li>
+            <li><a href="#servicos">Barba</a></li>
+            <li><a href="#servicos">Barba Premium</a></li>
+            <li><a href="#servicos">Pacote Completo</a></li>
+            <li><a href="#servicos">Sobrancelha</a></li>
+          </ul>
+        </nav>
+
+        <div class="footer-contato">
+          <h3>Contato</h3>
+          <address>
+            <a href="tel:+5511987654321">(11) 98765-4321</a>
+            <a href="mailto:contato@ferroenavalha.com.br">contato@ferroenavalha.com.br</a>
+            <span>Rua dos Barbearias, 123<br>Centro · São Paulo/SP</span>
+          </address>
+          <div class="footer-social">
+            <h4>Siga-nos</h4>
+            <div class="social-links">
+              <a href="#" class="social-link" aria-label="Instagram">IG</a>
+              <a href="#" class="social-link" aria-label="WhatsApp">WA</a>
+              <a href="#" class="social-link" aria-label="Facebook">FB</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2025 Ferro &amp; Navalha. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ══════════════════ WHATSAPP FLUTUANTE ══════════════════ -->
+  <a href="https://wa.me/5511987654321"
+     class="whatsapp-float"
+     aria-label="Fale conosco pelo WhatsApp"
+     rel="noopener"
+     target="_blank">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+      <path d="M12 0C5.373 0 0 5.373 0 12c0 2.11.549 4.09 1.508 5.814L0 24l6.335-1.482A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818c-1.945 0-3.756-.528-5.303-1.441l-.38-.225-3.76.879.938-3.653-.247-.396A9.821 9.821 0 012.182 12c0-5.415 4.403-9.818 9.818-9.818 5.415 0 9.818 4.403 9.818 9.818 0 5.415-4.403 9.818-9.818 9.818z"/>
+    </svg>
+  </a>
+
+  <!-- ══════════════════ POPUP DE CONTATO ══════════════════ -->
+  <div class="popup-overlay" id="popup-overlay" role="dialog" aria-modal="true" aria-labelledby="popup-titulo" hidden>
+    <div class="popup-box">
+      <button class="popup-close" id="popup-close" aria-label="Fechar">✕</button>
+      <p class="section-label">Agendar Horário</p>
+      <h3 id="popup-titulo">Reserve seu horário</h3>
+      <p class="popup-sub">Preencha e entraremos em contato para confirmar.</p>
+      <div class="popup-form">
+        <div class="form-group">
+          <label for="popup-nome">Nome completo</label>
+          <input type="text" id="popup-nome" name="nome" autocomplete="name" placeholder="Seu nome" />
+        </div>
+        <div class="form-group">
+          <label for="popup-tel">Telefone / WhatsApp</label>
+          <input type="tel" id="popup-tel" name="telefone" autocomplete="tel" placeholder="(11) 99999-9999" />
+        </div>
+        <div class="form-group">
+          <label for="popup-servico">Serviço desejado</label>
+          <select id="popup-servico" name="servico">
+            <option value="">Selecione o serviço</option>
+            <option>Corte Masculino</option>
+            <option>Degradê</option>
+            <option>Barba</option>
+            <option>Barba Premium</option>
+            <option>Pacote Completo</option>
+            <option>Sobrancelha</option>
+          </select>
+        </div>
+        <button class="btn btn-gold btn-block" id="popup-submit" type="button">
+          Confirmar Agendamento
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script src="background.js"></script>
+  <script src="animations.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
